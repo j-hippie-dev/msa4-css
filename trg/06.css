@@ -1,0 +1,10 @@
+ul {
+  list-style: none;
+  line-height: 2rem;
+}
+
+.txt-st {
+  color: #ad3000;;
+  font-size: 1.5em;
+  font-weight: 600;
+}
