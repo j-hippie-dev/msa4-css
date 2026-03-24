@@ -1,0 +1,47 @@
+.bg-box {
+  width: 200px;
+  height: 200px;
+  background-color: #a895ff;
+  
+  padding: 10px;
+  border: 10px dotted #000;
+
+  /* 배경색의 적용 범위를 지정 */
+  background-clip: content-box;
+}
+
+.bg-img {
+  width: 700px;
+  height: 400vw;
+  /* 만약의 상황을 대비해서 여러 개 설정 */
+  background-image: url("./cat1.jpg"), url("./cat2.jpg");
+  /* 기본: 바둑판 형식으로 들어감 */
+
+  /* fixed로 설정 시, 스크롤을 이동해도 배경이미지가 고정 */
+  background-attachment: fixed;
+
+  /* 배경 이미지의 크기를 설정, 기본(auto) */
+  /* contain: 한계(이미지 크기만큼)까지 커지면 바둑판 형식 */
+  /* cover: 꽉 채움. 한 장만 보이게 해 줌 */
+  background-size: cover;
+
+  /* 배경 이미지의 반복 방법 지정, 기본(initial) */
+  background-repeat: no-repeat;
+
+  /* 배경 이미지의 초기 위치를 지정 */
+  background-position: center;
+}
+
+.gradation {
+  width: 200px;
+  height: 200px;
+
+  /* linear-gradient(): 선형 그라데이션 효과를 부여 */
+  /* background: linear-gradient(#a895ff, #7151ff); */
+  /* background: linear-gradient(300deg, #a895ff, #7151ff); */
+  /* background: linear-gradient(#fff 50%, #7151ff 70%, #000); */
+
+  /* radial-gradient(): 원형 그라데이션 효과 부여 */
+  /* background: radial-gradient(#a895ff, #7151ff); */
+  background: radial-gradient(circle at 20% 0%, #fff, #a895ff, #000);
+}
