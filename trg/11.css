@@ -1,0 +1,85 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  padding-top: 5px;
+  font-family: "맑은 고딕", serif;
+  background-color: #000;
+}
+
+.container {
+  width: 550px;
+  margin: auto;
+  padding: 40px 20px;
+  border: 1px dotted #aaa;
+  background-color: #fff;
+  /* position: relative; */
+  /* 반응형을 생각한다면 height속성에 고정값 X */
+  height: 750px;
+  background-image: url(../edu/horror.jpeg);
+  background-repeat: no-repeat;
+  background-size: 50%;
+  background-position: right bottom;
+}
+
+header {
+  padding: 25px;
+  word-spacing: 3px;
+  text-align: center;
+  color: #fff;
+  background-color: #124041;
+}
+
+.sub-title {
+  padding: 25px 0 35px;
+  font-style: italic;
+  font-size: 1.5em;
+  font-weight: 600;
+  text-align: center;
+}
+
+/* .sub-title i {
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+} */
+
+.item-title {
+  padding: 15px 0;
+  font-size: 1.2em;
+  font-weight: 600;
+  color: #f00;
+}
+
+.item-content {
+  word-spacing: 2px;
+  line-height: 30px;
+  font-weight: 300;
+  padding: 5px 50px 0;
+}
+
+/* .img-box {
+  height: 250px;
+} */
+
+/* .img-box img {
+  width: 350px;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  } */
+
+/* .img-test {
+  width: 100%;
+  height: 100%;
+  background-image: url(../edu/horror.jpeg);
+  background-repeat: no-repeat;
+  background-size: 350px;
+  background-position: right bottom;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+} */
