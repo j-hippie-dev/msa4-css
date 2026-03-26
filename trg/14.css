@@ -1,0 +1,108 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+form {
+  width: 500px;
+}
+
+form div {
+  padding: 7px 0;
+}
+
+form div:first-of-type {
+  padding-top: 0;
+}
+
+fieldset {
+  padding: 0 10px;
+  background-image: url("sam2.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: top right;
+}
+
+#user-name,
+#user-age,
+#request-memo {
+  background-color: transparent;
+  /* 배경 투명 */
+}
+
+.container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.title {
+  color: #f402ff;
+}
+
+/* label, span {
+  font-weight: 500;
+} */
+.txt-st {
+  font-weight: 500;
+  padding: 3px;
+}
+
+.btn-wrap {
+  padding-bottom: 10px;
+}
+
+.hover-txt {
+  /* display: none; */
+  opacity: 0;
+  font-size: 1.2em;
+  color: #fff;
+  background-color: #000;
+}
+
+.btn {
+  padding: 0 10px;
+}
+
+.btn:hover + .hover-txt {
+  /* display: inline-block; */
+  opacity: 1;
+}
+
+label[for="request-memo"] {
+  vertical-align: top;;
+}
+
+input[name="user-gender"]:checked + label {
+  color: #f00;
+}
+
+#user-name:focus,
+#user-age:focus,
+#request-memo:focus {
+  border: 3px solid #f00;
+  outline: none;
+}
+
+.required-st::before {
+  content: "*";
+  color: red;
+}
+
+.btn-wrap:hover::after {
+  content: "내용을 다시 한 번 확인해 주세요.";
+  color: #fff;
+  background-color: #000;
+}
+
+
+/* list */
+/* ul {
+  list-style: none;
+}
+li {
+  padding: 5px;
+} */

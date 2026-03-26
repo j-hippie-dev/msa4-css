@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./14.css">
+</head>
+<body>
+  <div class="container">
+    <form action="">
+      <fieldset>
+        <legend><h1 class="title">I want YOU!</h1></legend>
+
+        <div>
+          <label for="user-name" class="required-st txt-st">이름</label>
+          <input type="text" name="user-name" id="user-name" required>
+        </div>
+
+        <div>
+          <label for="user-age" class="required-st txt-st">나이</label>
+          <input
+            type="number"
+            name="user-age"
+            id="user-age"
+            minlength="20"
+            required
+          >
+        </div>
+
+        <div>
+          <span class="required-st txt-st">성별</span>
+          <input type="radio" name="user-gender" id="man" required>
+          <label for="man" class="txt-st">남자</label>
+          <input type="radio" name="user-gender" id="woman" required>
+          <label for="woman" class="txt-st">여자</label>
+        </div>
+
+        <div>
+          <label for="request-memo" class="txt-st">요청사항</label>
+          <textarea
+            name="request-memo"
+            id="request-memo"
+            cols="30"
+            rows="10"
+            placeholder="요청 사항 입력"
+          ></textarea>
+        </div>
+
+        <!-- <ul>
+          <li>
+            <label for="user-name" class="required-st txt-st">이름</label>
+            <input type="text" name="user-name" id="user-name" required>
+          </li>
+          <li>
+            <label for="user-age" class="required-st txt-st">나이</label>
+            <input
+              type="number"
+              name="user-age"
+              id="user-age"
+              maxlength="20"
+              minlength="1"
+              required
+            >
+          </li>
+          <li>
+            <span class="required-st txt-st">성별</span>
+            <input type="radio" name="user-gender" id="man" required>
+            <label for="man" class="txt-st">남자</label>
+            <input type="radio" name="user-gender" id="woman" required>
+            <label for="woman" class="txt-st">여자</label>
+          </li>
+          <li>
+            <label for="request" class="txt-st">요청사항</label>
+            <textarea
+              name="request"
+              id="request"
+              cols="30"
+              rows="10"
+              placeholder="요청 사항 입력"
+            ></textarea>
+          </li>
+        </ul> -->
+
+        <div class="btn-wrap">
+          <!-- 버튼은 무조건 폼 태그 안에 있어야 함. 밖에 있으면 동작X -->
+          <button type="submit" class="btn">보내기</button>
+          <!-- <span class="hover-txt">내용을 다시 한 번 확인해 주세요.</span> -->
+        </div>
+      </fieldset>
+    </form>
+  </div>
+</body>
+</html>
