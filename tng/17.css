@@ -1,0 +1,43 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  display: flex;
+  gap: 10px;
+  width: 500px;
+  height: 500px;
+  margin: auto;
+  padding: 10px;
+  background-color: #808080;
+  flex-direction: column;
+}
+
+.row-box,
+.col-box {
+  flex: 1;
+  display: flex;
+  gap: 10px;
+}
+
+/* 자식 요소에는 되도록 height속성을 주지 말고 -> 부모 요소에! */
+/* 주더라도 height X -> flex-basis O */
+/* .container > div {
+  height: 150px;
+} */
+
+.item {
+  flex: 1;
+  border: 1px solid #000;
+  background-color: #679fa0;
+}
+
+.col-box {
+  flex-direction: column;
+}
+
+.col-box > .item:last-child {
+  flex: 2;
+}
