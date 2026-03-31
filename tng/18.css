@@ -1,0 +1,48 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.item {
+  background-color: rgb(138, 138, 255);
+}
+
+/* 비율 4개: 할 수는 있지만 비추천, 가장 작은 아이템에 맞춰 셀을 구성하는게 좋음 */
+/* .container {
+  background-color: rgb(252, 255, 99);
+  width: 600px;
+  height: 600px;
+  margin: auto;
+  padding: 10px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 2fr 2fr 1fr 1fr;
+  gap: 10px;
+}
+
+.item:nth-child(3) {
+  grid-column: 1 / 3;
+}
+
+.item:nth-child(4) {
+  grid-row: 3 / 5;
+} */
+
+.container {
+  width: 400px;
+  height: 500px;
+  padding: 10px;
+  background-color: rgb(252, 255, 99);
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(6, 1fr);
+  gap: 10px;
+}
+
+.my-grid-col-span-2 {
+  grid-column: span 2;
+}
+.my-grid-row-span-2 {
+  grid-row: span 2;
+}
